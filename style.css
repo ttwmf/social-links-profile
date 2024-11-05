@@ -1,0 +1,114 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html{
+    --grey-900-color: #141414;
+    --grey-800-color: #1F1F1F;
+    --grey-700-color: #333333;
+    --green-color: #C4F82A;
+    --white-color: #FFFFFF;
+
+    --font-size-preset-1: 1.5rem;
+    --font-size-preset-2: 0.875rem;
+
+    --font-weight-preset-bold: 700;
+    --font-weight-preset-regular: 400;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-family: 'Inter' sans-serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--grey-900-color);
+}
+
+
+h1 {
+    margin-bottom: 3rem;
+    color: var(--grey-700-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-800-color);
+    max-width: 24rem;;
+    padding: 2.5rem;
+    align-items: center;
+    border-radius: 0.75rem;
+
+}
+
+.avatar{
+    border-radius: 999px;
+    max-width: 5.5rem;
+    height: auto;
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.name-location{
+    margin-bottom: 1.5rem;
+}
+
+.name{
+    font-size: var(--font-size-preset-1);
+    font-weight: var(--font-weight-preset-bold);
+    color: var(--white-color);
+}
+
+.location{
+    font-size: var(--font-size-preset-2);
+    font-weight: var(--font-weight-preset-bold);
+    color: var(--green-color);
+}
+
+.bio{
+    font-size: var(--font-weight-preset-regular);
+    font-weight: var(--font-weight-preset-regular);
+    color: var(--white-color);
+    margin-bottom: 1.5rem;
+}
+
+ul.links{
+    list-style-type: none;
+    min-width: 19rem;
+    padding: 0;
+}
+.button{
+    color: var(--white-color);
+    background-color: var(--grey-700-color);
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+
+}
+
+.button:not(:last-child) {
+    margin: 0.5rem 0;
+}
+
+.button:hover{
+    background-color: var(--green-color);
+    font-weight: var(--font-weight-preset-bold);
+    color: var(--grey-700-color);
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3);
+}
+
+.footer {
+    color: var(--grey-700-color);
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
